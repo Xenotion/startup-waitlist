@@ -1,0 +1,92 @@
+/* App.css */
+html, body {
+  margin: 0;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px; /* Adjust the value as needed */
+  text-align: center;
+}
+
+.title-section {
+  display: flex;
+  flex-direction: column;
+  gap: 50px; /* Adjust the value as needed */
+  margin-bottom: 50px;
+}
+
+.input-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.email-input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid ;
+  width: 250px;
+  background-color: #222;
+  color: white;
+  transition: border-color 0.3s ease;
+}
+
+.email-input::placeholder {
+  color: #aaa;
+}
+
+.email-input:focus {
+  border-color: red;
+  outline: none;
+}
+
+.join-button {
+  padding: 10px 20px;;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.join-button:hover {
+  background-color: red;
+  transform: scale(1.05);
+}
+
+.join-button:active {
+  transform: scale(1);
+}
+
+.count-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Adjust the value as needed */
+  margin-top: 50px;
+}
+
+.title {
+  font-size: 400%;
+}
+
+.subtitle {
+  font-size: 150%;
+}
+
+.count-title {
+  font-size: 100%;
+}
+
+.join-count {
+  font-size: 400%;
+}
+
