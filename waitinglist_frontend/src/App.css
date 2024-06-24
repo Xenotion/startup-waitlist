@@ -9,6 +9,3 @@ html, body {
   font-family: sans-serif;
 }
 
-.custom-transition {
-  transition: background-color 0.7s ease-in-out, transform 0.7s ease-in-out, border-radius 3s ease-in-out;
-}
