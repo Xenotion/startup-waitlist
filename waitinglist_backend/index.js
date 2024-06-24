@@ -33,6 +33,15 @@ app.post('/submit', async (req, res) => {
     }
 });
 
+app.get('/emails', async (req, res) => {
+    try {
+        const emails = await WaitingList.find();
+        res.send(emails);
+    } catch (err) {
+        res.status(400).send
+    }
+});
+
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
 });
