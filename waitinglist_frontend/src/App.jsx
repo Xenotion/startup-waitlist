@@ -6,7 +6,7 @@ import WaitingList from './components/WaitingList';
 function App() {
   return (
     <>
-      <img className="w-24 h-24 ml-5 mt-5 absolute" src="./src/KwPcKaWg_400x400.jpg"></img>
+      <img className="w-24 h-24 ml-5 mt-5 absolute" src="./src/KwPcKaWg_400x400.png"></img>
       <div className="flex items-center justify-center min-h-screen w-screen">
         <div className="flex flex-col justify-center gap-14 w-2/3">
           <Countdown />

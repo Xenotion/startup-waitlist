@@ -33,10 +33,10 @@ const Countdown = () => {
 
   return (
     <div className="flex flex-col items-center gap-2.5 mb-14">
-      <div className="text-7xl">
+      <div className="text-4xl text-center mb-10 md:text-7xl ">
         {formatTimeLeft()} until the grand opening
       </div>
-      <div className="text-4xl">
+      <div className="text-2xl text-center mt-2 md:text-4xl">
         Join the waiting list and embrace the revolution
       </div>
     </div>

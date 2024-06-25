@@ -22,7 +22,7 @@ const WaitingList = () => {
 
   return (
     <div className="flex flex-col items-center gap-2.5 mt-14">
-      <div className="text-2xl">Number of innovators waiting for you:</div>
+      <div className="text-lg text-center md:text-2xl">Number of innovators waiting for you:</div>
       <div className="text-5xl">{emailList}</div>
     </div>
   );
