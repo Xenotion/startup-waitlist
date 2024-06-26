@@ -7,7 +7,7 @@ import WaitingList from './model/schema.js'; // Ensure you include the .js exten
 dotenv.config();
 
 const app = express();
-const port = 3003;
+const port = 3000;
 
 const mongoUri = `mongodb+srv://${process.env.MONGODB_USER}:${process.env.MONGODB_PASSWORD}@waitinglist.ncspnpl.mongodb.net/?retryWrites=true&w=majority&appName=waitinglist`;
 
@@ -21,6 +21,10 @@ mongoose.connect(
 
 app.use(express.json());
 app.use(cors());
+
+app.get('/', (req, res) => {
+    res.send('Hello World')
+})
 
 app.post('/submit', async (req, res) => {
     const { email } = req.body;
