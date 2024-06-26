@@ -30,10 +30,10 @@ const JoinForm = () => {
       className="flex flex-col items-center gap-2.5 w-full"
       onSubmit={(e) => e.preventDefault()}
     >
-      <div class="w-full sm:w-1/2 md:w-1/3 mb-5">
-        <div class="relative group w-full">
-          <div class="absolute -inset-0.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
-          <div class="relative p-5 bg-black rounded-lg leading-none flex items-center divide-x divide-gray-600">
+      <div className="w-full sm:w-1/2 md:w-1/3 mb-5">
+        <div className="relative group w-full">
+          <div className="absolute -inset-0.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+          <div className="relative p-5 bg-black rounded-lg leading-none flex items-center divide-x divide-gray-600">
             <input
               type="email"
               className="pl-3 pr-7 text-gray-100 bg-black w-full focus:outline-none"
