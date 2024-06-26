@@ -15,7 +15,7 @@ const JoinForm = () => {
   const handleClick = async () => {
     if (isValid) {
       try {
-        await axios.post("http://127.0.0.1:3003/submit", {
+        await axios.post("https://waitinglist-backend.vercel.app/submit", {
           email: email,
         });
         setIsClicked(true);

@@ -7,7 +7,7 @@ const WaitingList = () => {
   
   const fetchEmailList = async () => {
     try {
-      const response = await axios.get('http://127.0.0.1:3003/emails');
+      const response = await axios.get('https://waitinglist-backend.vercel.app/emails');
       console.log(response.data);
       setEmailList(response.data.length);
     } catch (error) {
