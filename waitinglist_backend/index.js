@@ -9,6 +9,12 @@ dotenv.config();
 const app = express();
 const port = 3000;
 
+// Configure CORS
+const corsOptions = {
+    origin: 'https://startup-waitlist.vercel.app', // Replace with your React app's URL
+    optionsSuccessStatus: 200 // Some legacy browsers (IE11, various SmartTVs) choke on 204
+};
+
 const mongoUri = `mongodb+srv://${process.env.MONGODB_USER}:${process.env.MONGODB_PASSWORD}@waitinglist.ncspnpl.mongodb.net/?retryWrites=true&w=majority&appName=waitinglist`;
 
 mongoose.connect(
@@ -20,7 +26,7 @@ mongoose.connect(
 });
 
 app.use(express.json());
-app.use(cors());
+app.use(cors(corsOptions));
 
 app.get('/', (req, res) => {
     res.send('Hello World')
