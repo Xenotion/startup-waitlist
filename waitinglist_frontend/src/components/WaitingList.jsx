@@ -3,6 +3,8 @@ import axios from 'axios';
 
 const WaitingList = () => {
   const [isLoading, setIsLoading] = useState(true);
+  const [emailList, setEmailList] = useState(0); // Define emailList and setEmailList
+  const [error, setError] = useState(null); // Define error and setError
 
   const fetchEmailList = async () => {
     setIsLoading(true);
