@@ -6,7 +6,7 @@ import WaitingList from './components/WaitingList';
 function App() {
   return (
     <>
-      <img className="w-24 h-24 ml-5 mt-5 absolute" src="https://github.com/Xenotion/waitinglist/blob/main/waitinglist_frontend/public/KwPcKaWg_400x400.png" alt=""></img>
+      <img className="w-24 h-24 ml-5 mt-5 absolute" src="https://raw.githubusercontent.com/Xenotion/waitinglist/main/waitinglist_frontend/public/KwPcKaWg_400x400.png" alt=""></img>
       <div className="flex items-center justify-center min-h-screen w-screen">
         <div className="flex flex-col justify-center gap-14 w-2/3">
           <Countdown />
