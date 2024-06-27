@@ -30,6 +30,7 @@ const JoinForm = () => {
       className="flex flex-col items-center gap-2.5 w-full"
       onSubmit={(e) => e.preventDefault()}
     >
+      {!isClicked ? 
       <div className="w-full sm:w-1/2 md:w-1/3 mb-5">
         <div className="relative group w-full">
           <div className="absolute -inset-0.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
@@ -44,7 +45,12 @@ const JoinForm = () => {
             ></input>
           </div>
         </div>
+      </div> 
+      :
+      <div className="text-2xl text-center mt-2 md:text-4xl text-green-400">
+        Thank you for joining the waiting list! We will notify you when we are ready.
       </div>
+      }
 
       <button
         type="button"
