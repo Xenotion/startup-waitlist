@@ -57,6 +57,6 @@ This is a full stack application designed to manage a waiting list for a future 
 
 ## Usage
 
-1. Navigate to `http://localhost:3000` in your web browser.
+1. Navigate to `http://localhost:<port>` in your web browser.
 2. Enter your email address to join the waiting list.
 3. Check the backend console for the received email addresses.
