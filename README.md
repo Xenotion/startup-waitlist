@@ -16,6 +16,7 @@ This is a full stack application designed to manage a waiting list for a future 
 - **Front End:** React, TailwindCSS, Axios
 - **Back End:** Express, Mongoose
 - **Database:** MongoDB
+- **Deployment:** Vercel
   
 ## Installation
 
