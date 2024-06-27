@@ -37,7 +37,7 @@ const Countdown = () => {
         {formatTimeLeft()} until the grand opening
       </div>
       <div className="text-2xl text-center mt-2 md:text-4xl">
-        Join the waiting list and embrace the revolution
+        Join the waitlist and be part of the next step forward
       </div>
     </div>
   );
