@@ -11,7 +11,7 @@ const port = 3000;
 
 // Configure CORS
 const corsOptions = {
-    origin: 'https://startup-waitlist.vercel.app', // Replace with your React app's URL
+    origin: ['http://localhost:5173', 'https://startup-waitlist.vercel.app'],
     optionsSuccessStatus: 200 // Some legacy browsers (IE11, various SmartTVs) choke on 204
 };
 
